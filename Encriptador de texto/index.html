@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Encriptador</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="assets/Header.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section id="input-section">
+            <textarea id="input-text" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="info"><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos</p>
+        </section>
+        <section id="output-section">
+            <div id="no-message">
+                <img src="assets/personaje.jpg" alt="Personaje" class="character">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn" class="hidden">Copiar</button>
+        </section>
+    </main>
+    <div class="buttons">
+        <button id="encrypt-btn">Encriptar</button>
+        <button id="decrypt-btn">Desencriptar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
